@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.ashini.everyday.adapter.TaskItemAdapter;
+
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
 
@@ -13,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String [] datas = {"香蕉","苹果","水蜜桃","橙子","橘子","柚子"};
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.task);
+        String [] data = {"香蕉","苹果","水蜜桃","橙子","橘子","柚子"};
+        RecyclerView recyclerView = findViewById(R.id.task);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new TaskItemAdapter(datas));
+        recyclerView.setAdapter(new TaskItemAdapter(data));
     }
 }
