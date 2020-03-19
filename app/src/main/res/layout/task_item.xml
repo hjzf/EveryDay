@@ -27,7 +27,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textSize="50sp" />
+                android:textSize="36sp" />
 
             <com.ashini.everyday.view.CycleProcessBar
                 android:id="@+id/task_item_cycle_process_bar"
@@ -35,7 +35,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 app:cycleColor="#A6CFE6"
-                app:processColor="#31B6F4"
+                app:processColor="#2196F3"
                 app:textColor="#4CAF50"
                 app:textSize="30sp"
                 app:thickness="8dp" />
